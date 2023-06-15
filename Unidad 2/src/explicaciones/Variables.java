@@ -14,5 +14,11 @@ public class Variables {
         texto = "Hola";         // Guardamos "Hola" en la variable texto.
         caracter = 'F';         // Guardamos la F en la variable caracter.
         bandera = true;         // Guardamos true en la variable bandera.
+
+        System.out.println(numeroEntero);
+        System.out.println(decimal);
+        System.out.println(texto);
+        System.out.println(caracter);
+        System.out.println(bandera);
     }
 }
