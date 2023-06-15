@@ -8,5 +8,11 @@ public class Variables {
         String texto;           // Variable para guardar texto.
         char caracter;          // Variable para guardar un caracter.
         boolean bandera;        // Variable para guardar un estado lógico.
+
+        numeroEntero = 15;      // Guardamos el valor 15 en la variable numeroEntero.
+        decimal = 3.14;         // Guardamos el valor 3.14 en la variable decimal.
+        texto = "Hola";         // Guardamos "Hola" en la variable texto.
+        caracter = 'F';         // Guardamos la F en la variable caracter.
+        bandera = true;         // Guardamos true en la variable bandera.
     }
 }
