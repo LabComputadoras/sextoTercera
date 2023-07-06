@@ -18,6 +18,8 @@ public class Preguntas {
             System.out.println("B es mayor que A");
         } else if (b == a) {
             System.out.println("B es igual a A");
+        } else {
+            System.out.println("B es menor que A");
         }
 
         System.out.println("Fin del programa");
