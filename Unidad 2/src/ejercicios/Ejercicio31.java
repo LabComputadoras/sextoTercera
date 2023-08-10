@@ -8,9 +8,9 @@ public class Ejercicio31 {
 
         int numeroIngresado;
         int cantidadMultiplos5 = 0;
-        int cantidadImpares = 0;
+        double cantidadImpares = 0;
         int cantidadIngresados1 = 0;
-        int sumaPares = 0;
+        double sumaPares = 0;
         int cantidadPares = 0;
         double porcentajeImpares;
         double promedioPares;
@@ -25,6 +25,7 @@ public class Ejercicio31 {
             // Analizando si el número es múltiplo de 5.
             if (numeroIngresado % 5 == 0) {
                 cantidadMultiplos5++;
+                continue;
             }
 
             switch (cantidadMultiplos5){
