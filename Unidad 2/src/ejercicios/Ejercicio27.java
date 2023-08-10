@@ -3,6 +3,8 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio27 {
+
+
     public static void main(String[] args) {
 
         double promedio;
@@ -16,14 +18,24 @@ public class Ejercicio27 {
             System.out.println("Ingrese un número entero: ");
             numeroIngresado = teclado.nextInt();
 
-            if (numeroIngresado % 2 == 0){
+            if (esPar(numeroIngresado)){
                  cantidadPares++;
                  sumaPares += numeroIngresado;
              }
         }
 
-        promedio = sumaPares / cantidadPares;
-        System.out.println("El promedio de los números pares es " + promedio);
+        if(cantidadPares == 0) {
+            System.out.println("No se ingresaron números pares");
+        } else {
+            promedio = sumaPares / cantidadPares;
+            System.out.println("El promedio de los números pares es " + promedio);
+        }
+
 
     }
+
+    static boolean esPar(int numero) {
+        return numero % 2 == 0;
+    }
+
 }
