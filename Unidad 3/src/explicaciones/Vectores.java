@@ -1,17 +1,22 @@
 package explicaciones;
 
+import java.util.Scanner;
+import static funciones.Funciones.*;
+
 public class Vectores {
     public static void main(String[] args) {
         int[] numeros;          // Declaración de un vector.
-        numeros = new int[5];
-        int[] otrosNumeros = {1, 1, 2, 3, 5, 8, 13};
+        numeros = new int[5];   // Definimos la longitud del arreglo.
+        Scanner ent = new Scanner(System.in);
 
-        numeros[0] = 1;
-        numeros[1] = 1;
-        numeros[2] = 2;
-        numeros[3] = 3;
-        numeros[4] = 5;
-        otrosNumeros[6] = 21;
+        for (int i = 0; i < numeros.length; i++) {
+            numeros[i] = ent.nextInt();
+        }
+
+        System.out.println("El vector ingresado es:");
+
+        imprimirVector(numeros);
+
 
     }
 }
