@@ -23,4 +23,8 @@ public class Funciones {
         }
         return vectorAleatorio;
     }
+
+    public static boolean esPar(int val) {
+        return val % 2 == 0;
+    }
 }
