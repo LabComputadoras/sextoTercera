@@ -7,4 +7,20 @@ public class Funciones {
             System.out.println(vector[i]);
         }
     }
+
+    public static int enteroAleatorio(int minimo, int maximo) {
+
+        int a = maximo + 1 - minimo;
+        return (int) Math.floor(Math.random() * a + minimo);
+
+    }
+
+    public static int[] vectorAleatorio(int largo, int min, int max){
+        int[] vectorAleatorio = new int[largo];
+
+        for (int i = 0; i < largo; i++) {
+            vectorAleatorio[i] = enteroAleatorio(min, max);
+        }
+        return vectorAleatorio;
+    }
 }
