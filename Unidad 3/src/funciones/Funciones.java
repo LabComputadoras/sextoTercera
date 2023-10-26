@@ -27,4 +27,23 @@ public class Funciones {
     public static boolean esPar(int val) {
         return val % 2 == 0;
     }
+
+    public static void imprimirMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length ; i++) {
+            for (int j = 0; j < matriz[i].length ; j++) {
+                System.out.printf("%-5d",matriz[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
+    public static int[][] matrizAleatoria(int filas, int cols, int min, int max) {
+        int[][] matrizAleatoria = new int[filas][cols];
+        for (int i = 0; i < matrizAleatoria.length ; i++) {
+            for (int j = 0; j < matrizAleatoria[i].length ; j++) {
+                matrizAleatoria[i][j] = enteroAleatorio(min, max);
+            }
+        }
+        return matrizAleatoria;
+    }
 }
